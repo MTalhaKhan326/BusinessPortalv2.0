@@ -1,0 +1,12 @@
+.icon-container {
+    cursor: pointer;
+    transition: color 0.2s;
+    /* Smooth color transition */
+
+    /* Define your default icon color here */
+}
+
+.icon-container.blue {
+    color: blue;
+    /* Change the color to blue when the blue class is applied */
+}
