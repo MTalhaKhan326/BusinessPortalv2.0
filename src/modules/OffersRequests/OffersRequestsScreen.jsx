@@ -1,10 +1,10 @@
 import { useState } from "react";
-import DashboardTemplate from "../../components/Templates/DashboardTemplate.jsx";
+import DashboardTemplate from "../../Components/Templates/DashboardTemplate.jsx";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { AiOutlineClose } from "react-icons/ai";
 import Modal from "react-modal";
-import TextInputField from "../../components/basic/TextInputField.jsx";
+import TextInputField from "../../Components/basic/TextInputField.jsx";
 import { FiMapPin } from "react-icons/fi";
 import AppImages from "../../assets/images/index.js";
 

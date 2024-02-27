@@ -1,6 +1,6 @@
 import { IoAnalytics, IoPersonOutline } from "react-icons/io5";
-import DashboardTemplate from "../../components/Templates/DashboardTemplate.jsx";
-import StatCard from "../../components/StatCard.jsx";
+import DashboardTemplate from "../../Components/Templates/DashboardTemplate.jsx";
+import StatCard from "../../Components/StatCard.jsx";
 import { PiBriefcase } from "react-icons/pi";
 import AppImages from "../../assets/images/index.js";
 

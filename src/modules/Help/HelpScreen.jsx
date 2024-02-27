@@ -1,4 +1,4 @@
-import DashboardTemplate from "../../components/Templates/DashboardTemplate.jsx";
+import DashboardTemplate from "../../Components/Templates/DashboardTemplate.jsx";
 
 function HelpScreen() {
   return (  
