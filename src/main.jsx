@@ -11,7 +11,7 @@ import VerifyScreen from './modules/Auth/VerifyScreen.jsx';
 import SignupScreen from './modules/Auth/SignupScreen';
 // import Dashboard from './modules/Auth/Dashboard';
 // import Analysis from './modules/Auth/Analysis';
-import DashboardTemplate from './Components/Templates/DashboardTemplate.jsx';
+import DashboardTemplate from './components/Templates/DashboardTemplate.jsx';
 import DashboardScreen from './modules/Dashboard/DashboardScreen.jsx';
 import AnalyticsScreen from './modules/Analytics/AnalyticsScreen.jsx';
 import CustomersScreen from './modules/Customers/CustomersScreen.jsx';
