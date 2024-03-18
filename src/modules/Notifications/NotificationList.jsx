@@ -25,6 +25,7 @@ const NotificationList = () => {
           <tr className=' text-[22px]'>
             <th>Time</th>
             <th>Title</th>
+            <th>Audience</th>
             <th>Body</th>
             <th>Content Type</th>
             <th>Content Body</th>
@@ -35,6 +36,7 @@ const NotificationList = () => {
             <tr key={item.id}>
                 <td className='pl-4'>{item.updated_at}</td>
               <td>{item.title}</td>
+              <td>{item.audience_count}</td>
               <td>{item.body}</td>
               <td>{item.content_type}</td>
               <td>
