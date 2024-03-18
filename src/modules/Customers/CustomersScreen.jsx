@@ -1,9 +1,10 @@
 import DashboardTemplate from "../../Components/Templates/DashboardTemplate";
+import NotificationList from "../Notifications/NotificationList";
 
 function CustomersScreen() {
   return (  
-    <DashboardTemplate pageTitle={"Customers"}>
-
+    <DashboardTemplate pageTitle={"Notifications List"}>
+          <NotificationList/>
     </DashboardTemplate>
   );
 }

@@ -10,6 +10,7 @@ const Form = () => {
     contentType: 'text', // Initial value for content type
     contentBody: '' // Initial value for content body
   });
+  const [loading , setLoading] = useState('')
 
   const [errors, setErrors] = useState({
     title: '',
@@ -41,6 +42,7 @@ const Form = () => {
       }));
       return;
     }
+    setLoading('1')
 
     const apiUrl = 'https://crm-lara-mongo-7azts5zmra-uc.a.run.app/api/broadcast-notification';
     try {
@@ -60,7 +62,15 @@ const Form = () => {
         throw new Error('Failed to submit form data');
       }
       else{
-        window.location.reload()
+        setLoading('')
+         setFormData({
+        title: '',
+        description: '',
+        url: '',
+        routeType: 'general_web_view_screen',
+        contentType: 'text',
+        contentBody: ''
+      });
       }
 
       // If form data is successfully submitted, you may want to reset the form or show a success message
@@ -166,7 +176,10 @@ const Form = () => {
           type="submit"
           className="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         >
-          Submit
+          {
+            loading === '1' ? 'loading....':'Submit'
+          }
+          
         </button>
       </form>
     </div>

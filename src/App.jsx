@@ -8,9 +8,9 @@ function App() {
     <>
       <BrowserRouter basename="/">
         <Routes>
-          {/* <Route exact path="/login" element={<LoginScreen />}></Route>
-          <Route exact path="/verify" element={<SignupScreen />}></Route> */}
-          <Route exact path="/signup" element={<SignupScreen />}></Route>
+          <Route exact path="/login" element={<LoginScreen />}></Route>
+          {/* <Route exact path="/verify" element={<SignupScreen />}></Route> */}
+          {/* <Route exact path="/signup" element={<SignupScreen />}></Route> */}
         </Routes>
       </BrowserRouter>
     </>

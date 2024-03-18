@@ -16,9 +16,10 @@ function Sidebar() {
   return (
     <div className="shadow-sm bg-white min-h-screen flex-[1_1_20%] h-[100%] mx-4 my-3">
       <div className="flex flex-col items-center space-y-2 py-8 px-4 ">
-        <div className="w-[72px] h-[72px]">
+        {/* <div className="w-[72px] h-[72px]">
           <img src={AppImages.onecall} alt="" srcset="" />
-        </div>
+        </div> */}
+        سرکار اپ کی دہلیز پر
       </div>
       <ul>
         {options.map((option) => (

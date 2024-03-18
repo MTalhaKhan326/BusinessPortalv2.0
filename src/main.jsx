@@ -21,6 +21,7 @@ import MessagesScreen from './modules/Messages/MessagesScreen.jsx';
 import HelpScreen from './modules/Help/HelpScreen.jsx';
 import SettingsScreen from './modules/Settings/SettingsScreen.jsx';
 import NotificationScreen from './modules/Notifications/NotificationScreen.jsx';
+import NotificationList from './modules/Notifications/NotificationList.jsx';
 
 const router = createBrowserRouter([
   // {
@@ -66,7 +67,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/analytics",
+    path: "/notification",
     element: <NotificationScreen />,
   },
   {

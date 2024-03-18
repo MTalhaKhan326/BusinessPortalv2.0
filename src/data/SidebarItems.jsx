@@ -16,11 +16,11 @@ const SidebarItems = [
     title: "Notification",
     icon: <IoAnalytics color={"#AFAFAF"} size={"24px"} />,
     activeIcon: <IoAnalytics color={"#24ACE3"} size={"24px"} />,
-    route: "/analytics"
+    route: "/notification"
   },
   {
     id: 3,
-    title: "Users / Customers",
+    title: "Notifications List",
     icon: <IoPersonOutline color={"#AFAFAF"} size={"24px"} />,
     activeIcon: <IoPersonOutline color={"#24ACE3"} size={"24px"} />,
     route: "/customers"

@@ -11,9 +11,10 @@ function Sidebar() {
   return (  
     <aside className="w-[20%] p-4 h-full fixed bg-white" >
       <div>
-        <div className="px-4">
-          <img src={AppImages.onecallLogo} className="w-[50px]" />
-          <h1 className="font-medium text-xs">OneCall</h1>
+        <div className="mt-6">
+          {/* <img src={AppImages.onecallLogo} className="w-[50px]" /> */}
+          <div className="font-bold text-[22px] text-center"> سرکار اپ کی دہلیز پر
+      </div>
         </div>
         <div className="mt-10 h-[70%] overflow-y-auto">
           <div className="">
