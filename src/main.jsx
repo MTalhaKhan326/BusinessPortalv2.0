@@ -20,6 +20,7 @@ import JobsScreen from './modules/Jobs/JobsScreen.jsx';
 import MessagesScreen from './modules/Messages/MessagesScreen.jsx';
 import HelpScreen from './modules/Help/HelpScreen.jsx';
 import SettingsScreen from './modules/Settings/SettingsScreen.jsx';
+import NotificationScreen from './modules/Notifications/NotificationScreen.jsx';
 
 const router = createBrowserRouter([
   // {
@@ -66,7 +67,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/analytics",
-    element: <AnalyticsScreen />,
+    element: <NotificationScreen />,
   },
   {
     path: "/customers",

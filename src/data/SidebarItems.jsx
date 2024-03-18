@@ -13,7 +13,7 @@ const SidebarItems = [
   },
   {
     id: 2,
-    title: "Analytics",
+    title: "Notification",
     icon: <IoAnalytics color={"#AFAFAF"} size={"24px"} />,
     activeIcon: <IoAnalytics color={"#24ACE3"} size={"24px"} />,
     route: "/analytics"
