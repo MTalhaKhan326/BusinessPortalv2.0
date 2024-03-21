@@ -50,8 +50,8 @@ const Form = () => {
         title: formData.title,
         body: formData.description,
         route_type: formData.routeType,
-        route: formData.url,
-        "markerId":"65deedcd9135274171b0faa5",
+        route: 'https://oc92.com/notification',
+        markerId:"65deedcd9135274171b0faa5",
         content_type: formData.contentType,
         content_body: formData.contentBody
       });
@@ -122,7 +122,7 @@ const Form = () => {
           ></textarea>
           {errors.description && <p className="text-red-500 text-xs mt-1">{errors.description}</p>}
         </div>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <label htmlFor="url" className="block text-sm font-medium text-gray-700">URL</label>
           <input
             type="text"
@@ -133,7 +133,7 @@ const Form = () => {
             placeholder='Enter Url'
             className="mt-1 focus:ring-indigo-500 p-2 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
           />
-        </div>
+        </div> */}
         <div className="mb-4">
           <label htmlFor="routeType" className="block text-sm font-medium text-gray-700">Route Type</label>
           <select

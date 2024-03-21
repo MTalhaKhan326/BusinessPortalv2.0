@@ -43,7 +43,7 @@ function Sidebar() {
           </div>
         </div>
       </div>
-      <div className="absolute left-0 bottom-0 w-full">
+      {/* <div className="absolute left-0 bottom-0 w-full">
         <ul className="px-4">
           <li
             className={("hover:bg-slate-50") + "  my-4 py-2 px-3 cursor-pointer rounded-lg"}
@@ -72,7 +72,7 @@ function Sidebar() {
             </div>
           </li>
         </ul>
-      </div>
+      </div> */}
     </aside>
   );
 }

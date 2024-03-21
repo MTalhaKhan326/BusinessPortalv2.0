@@ -16,6 +16,7 @@ const NotificationList = () => {
 
     fetchData();
   }, []);
+  console.log("Dataaa",data)
 
   return (
     <div className='bg-white'>
