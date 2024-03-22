@@ -5,7 +5,7 @@ const Form = () => {
   const [formData, setFormData] = useState({
     title: '',
     description: '',
-    url: '',
+    // url: '',
     routeType: 'general_web_view_screen', // Initial value for route type
     contentType: 'text', // Initial value for content type
     contentBody: '' // Initial value for content body
@@ -66,7 +66,7 @@ const Form = () => {
          setFormData({
         title: '',
         description: '',
-        url: '',
+        // url: '',
         routeType: 'general_web_view_screen',
         contentType: 'text',
         contentBody: ''
@@ -78,7 +78,7 @@ const Form = () => {
       setFormData({
         title: '',
         description: '',
-        url: '',
+        // url: '',
         routeType: 'general_web_view_screen',
         contentType: 'text',
         contentBody: ''
