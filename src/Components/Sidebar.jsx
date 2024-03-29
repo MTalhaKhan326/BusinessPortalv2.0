@@ -13,7 +13,7 @@ function Sidebar() {
       <div>
         <div className="mt-6">
           {/* <img src={AppImages.onecallLogo} className="w-[50px]" /> */}
-          <div className="font-bold text-[22px] text-center"> سرکار اپ کی دہلیز پر
+          <div className="font-bold text-[22px] text-center ur"> سرکار آپ کی دہلیز پر
       </div>
         </div>
         <div className="mt-10 h-[70%] overflow-y-auto">

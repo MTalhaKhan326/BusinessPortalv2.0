@@ -63,6 +63,24 @@ export function convertDateToReadableDate(date) {
     return (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear() 
 }
 
+export function formatTimestamp(timestamp) {
+    // Parse the timestamp string into a Date object
+    const date = new Date(timestamp);
+
+    // Get day, month, and year
+    const day = date.getDate();
+    const month = date.toLocaleString('default', { month: 'long' });
+    const year = date.getFullYear();
+
+    // Get time (in 12-hour format)
+    const time = date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+
+    // Concatenate the formatted date and time
+    const formattedDateTime = `${day} ${month} ${year}, ${time}`;
+
+    return formattedDateTime;
+}
+
 export function calculateDistance(latlng1, latlng2, unit = 'm', percision = 2) {
     var latlng1Arr = latlng1.toString().split(",");
     var latlng2Arr = latlng2.toString().split(",");
@@ -107,4 +125,12 @@ export function calculateDistance(latlng1, latlng2, unit = 'm', percision = 2) {
 
 export function toSentenceCase(text) {
     return text.split(' ').map(word => ["to", "of", "in", "by", "and"].includes(word) ? word : word[0].toUpperCase() + word.substring(1)).join(" ")
+}
+
+export function hasUrduCharacters(inputString) {
+    // Regular expression to match Urdu Unicode ranges
+    var urduRegex = /[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]/;
+    
+    // Test if the input string contains Urdu characters
+    return urduRegex.test(inputString);
 }

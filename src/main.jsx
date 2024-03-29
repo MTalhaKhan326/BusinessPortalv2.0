@@ -14,7 +14,6 @@ import SignupScreen from './modules/Auth/SignupScreen';
 import DashboardTemplate from './Components/Templates/DashboardTemplate.jsx'; 
 import DashboardScreen from './modules/Dashboard/DashboardScreen.jsx';
 import AnalyticsScreen from './modules/Analytics/AnalyticsScreen.jsx';
-import CustomersScreen from './modules/Customers/CustomersScreen.jsx';
 import OffersRequestsScreen from './modules/OffersRequests/OffersRequestsScreen.jsx';
 import JobsScreen from './modules/Jobs/JobsScreen.jsx';
 import MessagesScreen from './modules/Messages/MessagesScreen.jsx';
@@ -22,24 +21,11 @@ import HelpScreen from './modules/Help/HelpScreen.jsx';
 import SettingsScreen from './modules/Settings/SettingsScreen.jsx';
 import NotificationScreen from './modules/Notifications/NotificationScreen.jsx';
 import NotificationList from './modules/Notifications/NotificationList.jsx';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: (
-  //     <AuthContextProvider>
-  //       <Dashboard />
-  //     </AuthContextProvider>
-  //   ),
-  // },
-
   {
     path: "/",
-    // element: (
-    //   <AuthContextProvider>
-    //     <Analysis />
-    //   </AuthContextProvider>
-    // ),
     element: <DashboardScreen />,
   },
   {
@@ -71,8 +57,8 @@ const router = createBrowserRouter([
     element: <NotificationScreen />,
   },
   {
-    path: "/customers",
-    element: <CustomersScreen />,
+    path: '/notification/list',
+    element: <NotificationList />
   },
   {
     path: "/offers-requests",
@@ -101,9 +87,12 @@ const router = createBrowserRouter([
     </DashboardTemplate>
   },
 ]);
+const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>,
 )
